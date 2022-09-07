@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+body::after{
+    content: '';
+    background: url("./photo-1504754524776-8f4f37790ca0.avif");
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    
+}
+/* .container-img{
+    width: 15rem;
+    margin: 3rem;
+}
+img{
+    
+    width: 75%;
+} */
+.container__form{ 
+    padding:1rem; 
+     background-color:white; 
+    box-shadow: 0 0 0 10px rgba(0,0,0, 0.1); 
+    margin: 10rem;
+} 
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    letter-spacing: .2rem;
+}
+.plates-list{
+    text-align: left;
+    list-style-type: none;
+    /* font-weight: bold; */
+}
+.add-items input{
+    margin-top: 2px;
+    padding: 1rem;
+    border:1px solid rgba(70, 78, 70, 0.562); 
+    outline: 0;
+
+}
+.add-items input[type="submit"]{ 
+    background-color:rgba(78, 67, 73, 0.8); 
+    color:white; 
+    border:none; 
+   padding:1.1rem; 
+}
+.plates-list li{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    display: flex;
+}
+.plates-list label{
+    flex: 1;
+    cursor: pointer;
+}
+.plates-list input {
+    display: none;
+}
+.plates-list input + label:before{
+    content: "⬜️";
+    margin-right: 1rem;
+
+}
+.plates-list input:checked + label:before{ 
+    content:"🌮"; 
+ } 
